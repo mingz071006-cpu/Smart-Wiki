@@ -1,0 +1,43 @@
+:root.dark .dino-page,
+:root.dark .surf-page {
+  color: #f5f7fb;
+  color-scheme: dark;
+}
+:root.dark .dino-page{background:radial-gradient(circle at 12% 4%,rgba(52,211,153,.13),transparent 30%),linear-gradient(150deg,#09110f,#101923 58%,#0c121b)}
+:root.dark .surf-page{background:radial-gradient(circle at 12% 7%,rgba(34,211,238,.14),transparent 31%),linear-gradient(145deg,#07131d,#0b1828 56%,#0c1220)}
+:root.dark .dino-page .article-topbar,:root.dark .surf-page .article-topbar{border-color:#263246;background:rgba(12,18,29,.9);box-shadow:0 8px 30px rgba(0,0,0,.2);backdrop-filter:blur(18px)}
+:root.dark .dino-page .brand strong,:root.dark .surf-page .brand strong,:root.dark .dino-page .back-link,:root.dark .surf-page .back-link{color:#f8fafc}
+:root.dark .dino-page .brand small,:root.dark .surf-page .brand small,:root.dark .dino-heading p,:root.dark .surf-heading p{color:#aebacf}
+:root.dark .dino-page .arcade-switch a,:root.dark .surf-page .arcade-switch a{color:#b8c3d6;border-color:#2c384d;background:#151d2b}
+:root.dark .dino-page .arcade-switch a:hover,:root.dark .dino-page .arcade-switch a.active{color:#07130e;border-color:#55d89a;background:#55d89a}
+:root.dark .surf-page .arcade-switch a:hover,:root.dark .surf-page .arcade-switch a.active{color:#041419;border-color:#43d4e5;background:#43d4e5}
+:root.dark .dino-heading h1,:root.dark .surf-heading h1,:root.dark .dino-board h2,:root.dark .surf-board h2{color:#f8fafc}
+:root.dark .dino-heading h1 em,:root.dark .dino-page .section-kicker{color:#55d89a}
+:root.dark .surf-heading h1 em,:root.dark .surf-page .section-kicker{color:#43d4e5}
+:root.dark .dino-user,:root.dark .surf-user,:root.dark .dino-card,:root.dark .dino-board,:root.dark .surf-card,:root.dark .surf-board{color:#f5f7fb;border-color:#2b374b;background:#151d2a;box-shadow:0 20px 60px rgba(0,0,0,.34)}
+:root.dark .dino-user,:root.dark .surf-user{color:#b9c4d6}
+:root.dark .dino-user strong{color:#70e2aa}:root.dark .surf-user strong{color:#65e2ee}
+:root.dark .dino-hud,:root.dark .surf-hud{color:#f8fafc;border-color:#2b374b;background:#111925}
+:root.dark .dino-hud small,:root.dark .surf-hud small,:root.dark .dino-mobile span,:root.dark .dino-board li.empty,:root.dark .surf-board li.empty{color:#aebacf}
+:root.dark .dino-hud button,:root.dark .dino-board header button,:root.dark .surf-hud button,:root.dark .surf-board header button{color:#dce5f2;border-color:#344158;background:#202a3a}
+:root.dark .dino-hud button:hover,:root.dark .dino-board header button:hover{color:#07130e;border-color:#55d89a;background:#55d89a}
+:root.dark .surf-hud button:hover,:root.dark .surf-board header button:hover{color:#041419;border-color:#43d4e5;background:#43d4e5}
+:root.dark .dino-stage{background:#0f1825}:root.dark .surf-stage{background:#075f78}
+:root.dark .dino-overlay{color:#f8fafc;background:rgba(10,17,27,.9)}
+:root.dark .dino-overlay p,:root.dark .surf-overlay p{color:#c4cfdd}
+:root.dark .dino-overlay button{color:#06120d;background:#55d89a;box-shadow:0 10px 28px rgba(85,216,154,.22)}
+:root.dark .surf-overlay{color:#fff;background:rgba(3,18,33,.82)}
+:root.dark .surf-overlay button{color:#04222a;background:#8aebf2;box-shadow:0 10px 28px rgba(67,212,229,.22)}
+:root.dark .dino-mobile,:root.dark .surf-mobile{color:#dce5f2;border-top:1px solid #29364a;background:#101824}
+:root.dark .dino-mobile button{color:#8ce6b8;border-color:#2d634d;background:#17271f}
+:root.dark .surf-mobile button{color:#83e9f1;border-color:#286271;background:#112830}
+:root.dark .dino-board li,:root.dark .surf-board li{border:1px solid transparent}
+:root.dark .dino-board li:nth-child(even),:root.dark .surf-board li:nth-child(even){background:rgba(255,255,255,.025)}
+:root.dark .dino-board li.me{border-color:rgba(85,216,154,.3);background:rgba(85,216,154,.13)}
+:root.dark .surf-board li.me{border-color:rgba(67,212,229,.3);background:rgba(67,212,229,.13)}
+:root.dark .dino-board .rank,:root.dark .surf-board .rank{color:#a9b7ca}
+:root.dark .dino-board .name,:root.dark .dino-board .points,:root.dark .surf-board .name,:root.dark .surf-board .points{color:#f8fafc}
+:root.dark .dino-board footer,:root.dark .surf-board footer{color:#f1f5f9;background:#1b2634}
+:root.dark .dino-board footer p,:root.dark .surf-board footer p{color:#aebacf}
+:root.dark .boost-track{background:#303d52}:root.dark .surf-toast{color:#effcff;background:#102c39}
+@media(prefers-contrast:more){:root.dark .dino-overlay,:root.dark .surf-overlay{background:#08111e}:root.dark .dino-board .name,:root.dark .surf-board .name{color:#fff}}

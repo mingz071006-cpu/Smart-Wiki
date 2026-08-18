@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1785737284187,
+    "key": "瓦洛兰特",
+    "keyword": "瓦洛兰特",
+    "count": 1,
+    "status": "resolved",
+    "firstSearchedAt": "2026-08-03T06:08:04.187Z",
+    "lastSearchedAt": "2026-08-03T06:08:04.187Z",
+    "users": [
+      {
+        "id": 1785724535140,
+        "name": "Linus Zhong"
+      }
+    ],
+    "resolvedAt": "2026-08-03T06:52:59.514Z",
+    "resolvedBy": "Linus Zhong"
+  },
+  {
+    "id": 1785737255559,
+    "key": "pubg",
+    "keyword": "pubg",
+    "count": 1,
+    "status": "resolved",
+    "firstSearchedAt": "2026-08-03T06:07:35.559Z",
+    "lastSearchedAt": "2026-08-03T06:07:35.559Z",
+    "users": [
+      {
+        "id": 1785724535140,
+        "name": "Linus Zhong"
+      }
+    ],
+    "resolvedAt": "2026-08-03T06:53:00.905Z",
+    "resolvedBy": "Linus Zhong"
+  }
+]

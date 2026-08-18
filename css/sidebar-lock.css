@@ -1,0 +1,23 @@
+/* Keep desktop sidebars attached to the viewport, independent of page content. */
+@media(min-width:721px){
+  html:has(body.home-page),body.home-page{height:100%;overflow:hidden!important}
+  body.home-page .app-shell{height:100dvh!important;overflow:hidden!important}
+  body.home-page .sidebar{position:fixed!important;inset:0 auto 0 0!important;width:252px!important;height:100dvh!important;max-height:100dvh!important;overflow-x:hidden!important;overflow-y:auto!important;overscroll-behavior:contain;transform:none!important}
+  body.home-page .page{height:100dvh!important;margin-left:252px!important;overflow-x:hidden!important;overflow-y:auto!important;overscroll-behavior:contain;scrollbar-gutter:stable}
+}
+@media(min-width:851px){
+  html:has(body.admin-page),body.admin-page{height:100%;overflow:hidden!important}
+  body.admin-page .admin-shell{display:block!important;height:100dvh!important;min-height:0!important;overflow:hidden!important}
+  body.admin-page .admin-sidebar{position:fixed!important;inset:0 auto 0 0!important;width:270px!important;height:100dvh!important;max-height:100dvh!important;overflow:hidden!important;transform:none!important}
+  body.admin-page .admin-main{width:auto!important;height:100dvh!important;margin-left:270px!important;overflow-x:hidden!important;overflow-y:auto!important;overscroll-behavior:contain;scrollbar-gutter:stable}
+}
+@media(max-width:720px){
+  html:has(body.home-page),body.home-page,body.home-page .app-shell{height:auto!important;overflow-x:hidden!important;overflow-y:auto!important}
+  body.home-page .sidebar{position:fixed!important;inset:0 auto 0 0!important;height:100dvh!important;overflow-y:auto!important}
+  body.home-page .page{height:auto!important;margin-left:0!important;overflow:visible!important}
+}
+@media(max-width:850px){
+  html:has(body.admin-page),body.admin-page,body.admin-page .admin-shell{height:auto!important;overflow-x:hidden!important;overflow-y:auto!important}
+  body.admin-page .admin-sidebar{position:sticky!important;inset:auto!important;top:0!important;width:100%!important;height:auto!important;max-height:none!important;overflow:visible!important}
+  body.admin-page .admin-main{height:auto!important;margin-left:0!important;overflow:visible!important}
+}

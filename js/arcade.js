@@ -1,0 +1,3 @@
+const arcadeStatus=document.querySelector("#arcadeStatus"),games=["knowledge-run","dino-run","surf-run"];
+async function loadArcadeScores(){try{const results=await Promise.all(games.map(game=>fetch(wikiApiUrl(`/api/game/leaderboard?game=${game}`)).then(response=>{if(!response.ok)throw new Error();return response.json();})));results.forEach((result,index)=>{const target=document.querySelector(`[data-best="${games[index]}"]`);target.textContent=result.items?.[0]?.score??"暂无";});arcadeStatus.classList.add("ready");arcadeStatus.innerHTML="<i></i>排行榜已连接";}catch{arcadeStatus.innerHTML="<i></i>排行榜暂时离线";}}
+loadArcadeScores();

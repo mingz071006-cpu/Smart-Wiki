@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1786428554755,
+    "followerId": 1785725082255,
+    "followerName": "Mingxi",
+    "followingId": 1785724535140,
+    "followingName": "Zhong Mingxi",
+    "createdAt": "2026-08-11T06:09:14.755Z"
+  },
+  {
+    "id": 1786011170420,
+    "followerId": 1785724535140,
+    "followerName": "Zhong Mingxi",
+    "followingId": 1785725082255,
+    "followingName": "Test",
+    "createdAt": "2026-08-06T10:12:50.420Z"
+  }
+]

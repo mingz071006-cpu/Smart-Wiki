@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1786011118360,
+    "articleId": 1051,
+    "parentId": null,
+    "userId": 1785725082255,
+    "userName": "Test",
+    "content": "不错",
+    "createdAt": "2026-08-06T10:11:58.360Z"
+  },
+  {
+    "id": 1786007845003,
+    "articleId": 34,
+    "parentId": null,
+    "userId": 1785724535140,
+    "userName": "Zhong Mingxi",
+    "content": "很好玩的游戏！",
+    "createdAt": "2026-08-06T09:17:25.003Z"
+  }
+]

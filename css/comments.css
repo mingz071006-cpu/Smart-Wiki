@@ -1,0 +1,8 @@
+button.comment-avatar{padding:0;border:0;cursor:pointer;font:800 15px inherit;transition:transform .18s,box-shadow .18s}
+button.comment-avatar:hover,button.comment-avatar:focus-visible{outline:3px solid rgba(79,70,229,.18);outline-offset:3px;transform:translateY(-2px);box-shadow:0 8px 18px rgba(79,70,229,.25)}
+button.comment-avatar~div .comment-actions{display:none;margin-top:10px;padding:9px;border:1px solid var(--border);border-radius:10px;background:var(--surface2)}
+.comment-item.show-profile-actions button.comment-avatar~div .comment-actions{display:flex;animation:comment-actions-in .16s ease-out}
+.comment-item.show-profile-actions{border-color:#d9dcff;box-shadow:0 8px 24px rgba(79,70,229,.08)}
+.comment-self-badge{margin-right:auto;padding:2px 6px;color:var(--primary);border-radius:99px;background:var(--primary-soft);font-size:9px;font-style:normal}
+@keyframes comment-actions-in{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+@media(max-width:600px){button.comment-avatar~div .comment-actions{flex-wrap:wrap}.comment-actions button,.comment-actions a{min-height:38px;padding:8px 12px}}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>消息中心 · Smart Wiki</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="advanced-ui.css?v=1.0.2-unread"><link rel="stylesheet" href="messages-ui.css?v=1.0.2-messages5"></head>
+<body class="messages-page">
+<header class="article-topbar messages-topbar"><a class="brand" href="index.html"><span class="brand-mark">S</span><span><strong>Smart Wiki</strong><small>MESSENGER</small></span></a><div><strong>站内聊天</strong><small id="messageSummary">正在连接…</small></div><a class="back-link" href="index.html">← 返回首页</a></header>
+<main class="messenger-shell" id="messengerShell">
+  <aside class="conversation-panel">
+    <div class="conversation-heading"><div><span class="section-kicker">MESSAGES</span><h1>消息中心</h1></div></div>
+    <button class="system-conversation" id="showNotifications" type="button"><span class="system-conversation-icon">🔔</span><span><strong>系统通知</strong><small>更新、评论回复与关注提醒</small></span><b id="notificationBadge" hidden>0</b><i>›</i></button>
+    <label class="conversation-search"><span>⌕</span><input id="conversationSearch" type="search" placeholder="搜索联系人"></label>
+    <div class="conversation-list" id="conversationList"><div class="messenger-empty">正在读取会话…</div></div>
+  </aside>
+  <section class="chat-panel" id="chatPanel">
+    <div class="chat-placeholder" id="chatPlaceholder"><span>✦</span><h2>选择一位联系人</h2><p>在 Smart Wiki 内开始安全、清晰的交流。</p></div>
+    <div class="chat-view" id="chatView" hidden>
+      <header class="chat-header"><button class="chat-back" id="chatBack" type="button" aria-label="返回联系人">←</button><span class="chat-avatar" id="chatAvatar">U</span><div><strong id="chatName">用户</strong><small id="chatStatus">站内用户</small></div><button class="chat-follow-button" id="chatFollowButton" type="button">关注</button></header>
+      <div class="chat-messages" id="chatMessages"></div>
+      <form class="chat-compose" id="chatCompose"><textarea id="chatInput" rows="1" maxlength="1000" placeholder="输入消息…"></textarea><button type="submit" aria-label="发送消息">➤</button></form>
+    </div>
+    <div class="notification-view" id="notificationView" hidden><header class="notification-header"><button class="chat-back" id="notificationBack" type="button">←</button><div><h2>系统通知</h2><small>评论回复、关注与站内提醒</small></div><div class="notification-tools"><button id="readAllMessages" type="button">全部已读</button><button id="clearReadMessages" type="button">清除已读</button><button id="clearSystemMessages" class="danger-soft" type="button">清除通知</button><button id="clearDirectMessages" class="danger-soft" type="button">清除私信</button></div></header><div class="notification-list" id="notificationList"></div></div>
+  </section>
+</main>
+<script src="wiki-data.js"></script><script src="messages.js?v=1.0.2-messages6"></script>
+</body></html>

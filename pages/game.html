@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+  <meta name="description" content="Smart Wiki 知识星球冲刺小游戏"><title>知识星球冲刺 · Smart Wiki</title>
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="advanced-ui.css"><link rel="stylesheet" href="game.css">
+</head>
+<body class="game-page">
+  <header class="article-topbar game-topbar"><a class="brand" href="index.html"><span class="brand-mark">S</span><span><strong>Smart Wiki</strong><small>PLAY LAB</small></span></a><div><a class="back-link game-back" href="index.html">← 返回首页</a></div></header>
+  <main class="game-main">
+    <nav class="arcade-switch" aria-label="切换游戏"><a href="arcade.html">游戏中心</a><a class="active" href="game.html">知识冲刺</a><a href="dino.html">Dino</a><a href="surf.html">Surf</a></nav><section class="game-intro"><div><span class="section-kicker">SMART WIKI ARCADE</span><h1>知识星球<span>冲刺</span></h1><p>收集知识能量，避开红色故障块。坚持越久，速度越快。</p></div><div class="game-user" id="gameUser"></div></section>
+    <div class="game-layout">
+      <section class="game-card">
+        <div class="game-hud"><div><small>分数</small><strong id="scoreValue">0</strong></div><div><small>危险等级</small><strong id="levelValue">1</strong></div><div><small>生命 / 连击</small><strong><span id="livesValue">♥ ♥ ♥</span> <i id="comboValue">×1</i></strong></div><button id="soundButton" type="button" aria-label="切换声音">声音：开</button></div>
+        <div class="canvas-wrap"><canvas id="gameCanvas" width="720" height="760" aria-label="知识星球冲刺游戏区域"></canvas><div class="game-overlay" id="gameOverlay"><span class="planet-icon">✦</span><h2 id="overlayTitle">困难模式</h2><p id="overlayText">障碍会追踪并成组出现。电脑使用 ← → 或 A D，手机左右拖动。</p><button id="startButton" type="button">接受挑战</button></div></div>
+        <div class="mobile-controls" aria-label="触摸控制"><button id="leftButton" type="button" aria-label="向左移动">←</button><span>按住移动</span><button id="rightButton" type="button" aria-label="向右移动">→</button></div>
+      </section>
+      <aside class="leader-card"><div class="leader-head"><div><span class="section-kicker">TOP PLAYERS</span><h2>排行榜</h2></div><button id="refreshBoard" type="button" aria-label="刷新排行榜">↻</button></div><div class="leader-tabs"><button class="active" type="button">全站最佳</button><span>每台设备保留最高分</span></div><ol id="leaderboard" class="leader-list"><li class="leader-loading">正在读取排名…</li></ol><div class="leader-note"><strong>无需登录</strong><p>完成一局自动上榜，Cookie 会记住这台设备；登录后显示账户昵称。</p></div></aside>
+    </div>
+  </main>
+  <div class="game-toast" id="gameToast" hidden></div>
+  <script src="wiki-data.js"></script><script src="game.js"></script>
+</body></html>

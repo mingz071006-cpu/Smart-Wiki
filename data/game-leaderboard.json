@@ -1,0 +1,57 @@
+[
+  {
+    "game": "dino-run",
+    "userId": 1785747543975,
+    "name": "Long Zhengjie PP",
+    "score": 2410,
+    "level": 21,
+    "achievedAt": "2026-08-08T04:38:15.902Z"
+  },
+  {
+    "game": "dino-run",
+    "userId": 1785725082255,
+    "name": "Mingxi",
+    "score": 2310,
+    "level": 20,
+    "achievedAt": "2026-08-07T02:45:40.047Z"
+  },
+  {
+    "game": "dino-run",
+    "userId": 1785724535140,
+    "name": "Zhong Mingxi",
+    "score": 1844,
+    "level": 16,
+    "achievedAt": "2026-08-08T04:08:17.224Z"
+  },
+  {
+    "game": "surf-run",
+    "userId": 1785724535140,
+    "name": "Zhong Mingxi",
+    "score": 1497,
+    "level": 20,
+    "achievedAt": "2026-08-08T04:48:27.961Z"
+  },
+  {
+    "game": "surf-run",
+    "userId": 1785747543975,
+    "name": "blizz",
+    "score": 1298,
+    "level": 18,
+    "achievedAt": "2026-08-08T04:50:17.191Z"
+  },
+  {
+    "userId": 1785724535140,
+    "name": "Zhong Mingxi",
+    "score": 1240,
+    "level": 17,
+    "achievedAt": "2026-08-08T04:50:53.953Z"
+  },
+  {
+    "game": "knowledge-run",
+    "userId": 1785747543975,
+    "name": "Long Zhengjie",
+    "score": 815,
+    "level": 11,
+    "achievedAt": "2026-08-03T09:01:15.179Z"
+  }
+]

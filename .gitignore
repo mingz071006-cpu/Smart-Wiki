@@ -1,0 +1,9 @@
+.env
+.env.local
+.idea/
+node_modules/
+.pnpm-store/
+.DS_Store
+dist-desktop/
+dist-desktop-mac/
+data/server.pid

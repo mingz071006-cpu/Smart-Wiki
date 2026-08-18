@@ -1,0 +1,37 @@
+{
+  "name":"smart-wiki",
+  "version":"1.0.2",
+  "description":"Smart Wiki knowledge server and desktop manager",
+  "private":true,
+  "type":"module",
+  "main":"desktop/main.cjs",
+  "scripts":{
+    "start":"node server.mjs",
+    "desktop":"electron .",
+    "icons":"node scripts/generate-desktop-icons.cjs",
+    "build:win":"node scripts/generate-desktop-icons.cjs && electron-builder --win portable",
+    "build:mac":"electron-builder --mac dmg --config.directories.output=dist-desktop-mac"
+  },
+  "devDependencies":{
+    "electron":"^37.2.6",
+    "electron-builder":"^26.0.12"
+  },
+  "build":{
+    "appId":"plus.smartwiki.servermanager",
+    "productName":"Smart Wiki Server Manager",
+    "asar":true,
+    "directories":{"output":"dist-desktop"},
+    "files":["desktop/**/*","package.json"],
+    "extraResources":[
+      {"from":"server.mjs","to":"wiki/server.mjs"},
+      {"from":"index.html","to":"wiki/index.html"},
+      {"from":"pages","to":"wiki/pages"},
+      {"from":"css","to":"wiki/css"},
+      {"from":"js","to":"wiki/js"},
+      {"from":"assets","to":"wiki/assets"},
+      {"from":"data","to":"wiki/seed-data"}
+    ],
+    "win":{"target":["portable"],"icon":"desktop/assets/smart-wiki.ico","artifactName":"Smart-Wiki-Server-Manager-${version}.exe"},
+    "mac":{"target":["dmg"],"icon":"desktop/assets/smart-wiki.png","category":"public.app-category.utilities","artifactName":"Smart-Wiki-Server-Manager-${version}.${ext}"}
+  }
+}

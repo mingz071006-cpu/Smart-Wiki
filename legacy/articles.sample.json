@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "title": "HTML",
+    "category": "编程",
+    "summary": "HTML 是用来构建网页内容和结构的标记语言。",
+    "content": "HTML 的全称是 HyperText Markup Language。",
+    "updatedAt": "2026-08-03"
+  }
+]

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Smart Wiki 服务端管理器</title>
+  <link rel="stylesheet" href="manager.css">
+  <link rel="stylesheet" href="manager-version.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand-icon"><span>S</span><i></i></div>
+    <div class="brand-copy"><h1>Smart Wiki</h1><p>服务端管理器</p></div>
+    <span class="platform" id="platformLabel">DESKTOP · 1.0.2</span>
+  </header>
+  <main>
+    <section class="status-card">
+      <div class="status-icon"><span class="status-dot" id="statusDot"></span></div>
+      <div class="status-copy"><small>SERVER STATUS</small><h2 id="statusTitle">正在检查服务器…</h2><p id="statusDetail">请稍候</p></div>
+      <button class="icon-button" id="refresh" title="刷新状态" aria-label="刷新状态">↻</button>
+    </section>
+
+    <section class="control-panel">
+      <div class="panel-heading"><div><small>SERVER CONTROL</small><h2>服务器控制</h2></div><span id="modeHint">根据状态选择可用操作</span></div>
+      <div class="server-actions">
+        <button class="action-button start" data-action="start"><b class="button-icon">▶</b><span><strong>启动</strong><small>开启网站服务</small></span></button>
+        <button class="action-button restart" data-action="restart"><b class="button-icon">↻</b><span><strong>重新启动</strong><small>更新后重新加载</small></span></button>
+        <button class="action-button stop" data-action="stop"><b class="button-icon">■</b><span><strong>停止</strong><small>关闭网站服务</small></span></button>
+      </div>
+    </section>
+
+    <section class="shortcut-panel">
+      <div class="panel-heading"><div><small>QUICK ACCESS</small><h2>快捷入口</h2></div></div>
+      <div class="shortcut-grid">
+        <button class="shortcut primary" data-link=""><span>⌂</span><strong>打开主页</strong></button>
+        <button class="shortcut" data-link="pages/lan.html"><span>▦</span><strong>手机二维码</strong></button>
+        <button class="shortcut" data-link="pages/admin.html"><span>⚙</span><strong>管理后台</strong></button>
+        <button class="shortcut" id="openData"><span>▰</span><strong>数据文件夹</strong></button>
+        <button class="shortcut" id="hideManager"><span>—</span><strong>隐藏到托盘</strong></button>
+      </div>
+    </section>
+
+    <section class="address-card"><div><small>手机和局域网设备访问地址</small><strong id="lanAddress">正在读取…</strong></div><button id="copyAddress">复制地址</button></section>
+    <section class="version-panel">
+      <div class="panel-heading"><div><small>VERSION RELEASE</small><h2>版本管理</h2></div><span id="currentVersion">当前版本读取中…</span></div>
+      <form id="versionForm" class="version-form">
+        <label><span>新版本号</span><input id="versionNumber" required pattern="\d+\.\d+\.\d+([+-][A-Za-z0-9.-]+)?" placeholder="例如：1.0.3"></label>
+        <label><span>更新说明</span><textarea id="releaseNotes" required maxlength="1000" rows="3" placeholder="填写本次新增功能、修复内容和重要变化"></textarea></label>
+        <button type="submit" class="publish-button"><span>↑</span><strong>发布新版本</strong><small>同步版本号并通知全部用户</small></button>
+      </form>
+      <p class="version-tip">发布只更新网站显示版本和系统通知，不会改变 EXE 文件自身的名称。</p>
+    </section>
+    <section class="devices"><div class="section-title"><div><small>LIVE DEVICES</small><h2>在线设备</h2></div><strong id="onlineCount">0 台在线</strong></div><div class="device-table"><div class="device-row heading"><span>设备 / 型号</span><span>类型</span><span>浏览器</span><span>IP 地址</span><span>最后活动</span></div><div id="deviceRows"><p class="empty">暂无在线设备</p></div></div></section>
+    <details class="logs"><summary><span><small>SERVER LOG</small><strong>运行记录</strong></span><i>展开查看</i></summary><pre id="logs">管理器已打开</pre></details>
+  </main>
+  <div class="toast" id="toast" hidden></div>
+  <script src="manager.js"></script>
+</body>
+</html>

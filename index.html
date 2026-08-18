@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Smart Wiki：清晰、开放的智能知识库"><title>Smart Wiki</title><link rel="stylesheet" href="style.css?v=1.0.1-3"><link rel="stylesheet" href="advanced-ui.css?v=1.0.2-unread"><link rel="stylesheet" href="topbar-actions.css?v=1.0.1-2"><link rel="stylesheet" href="sidebar-lock.css?v=1.0.2">
+  <style id="edge-home-lock">html,body.home-page{height:100%!important;overflow:hidden!important}body.home-page .app-shell{height:100vh!important;overflow:hidden!important}body.home-page .sidebar{position:fixed!important;inset:0 auto 0 0!important;z-index:999!important;width:252px!important;height:100vh!important;max-height:100vh!important;overflow-x:hidden!important;overflow-y:auto!important;transform:none!important}body.home-page .page{box-sizing:border-box!important;height:100vh!important;margin-left:252px!important;overflow-x:hidden!important;overflow-y:scroll!important;overscroll-behavior:contain}@media (hover:none) and (pointer:coarse){html,body.home-page{height:auto!important;overflow-x:hidden!important;overflow-y:auto!important}body.home-page .app-shell{height:auto!important;overflow:visible!important}body.home-page .sidebar{width:min(82vw,300px)!important;height:100vh!important;transform:translateX(-100%)!important}body.home-page .sidebar.open{transform:translateX(0)!important}body.home-page .page{height:auto!important;margin-left:0!important;overflow:visible!important}}</style>
+</head>
+<body class="home-page" data-page="home">
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="index.html"><span class="brand-mark">S</span><span><strong>Smart Wiki</strong><small>KNOWLEDGE HUB</small></span></a>
+    <nav class="nav-list" aria-label="主要导航">
+      <div class="sidebar-portals"><a class="portal-card knowledge active" href="index.html"><span>▦</span><div><strong>知识库</strong><small>查询与阅读全部条目</small></div></a><a class="portal-card learning" href="python-center.html"><span>Py</span><div><strong>代码学习</strong><small>Python 互动课程</small></div></a><a class="portal-card gaming" href="arcade.html"><span>◆</span><div><strong>游戏中心</strong><small>三个网页小游戏</small></div></a><a class="portal-card toolbox" href="tools.html"><span>⇄</span><div><strong>实用工具箱</strong><small>文档与开发工具</small></div></a></div>
+      <details class="category-menu"><summary><span>知识分类</span><b>展开</b></summary><div><button class="nav-item category-nav" data-category="全部"><span>▦</span>全部条目</button>
+      <button class="nav-item category-nav" data-category="科技前沿"><span>◎</span>科技前沿</button>
+      <button class="nav-item category-nav" data-category="编程开发"><span>⌘</span>编程开发</button>
+      <button class="nav-item category-nav" data-category="网络与安全"><span>⌁</span>网络与安全</button>
+      <button class="nav-item category-nav" data-category="自然科学"><span>✦</span>自然科学</button>
+      <button class="nav-item category-nav" data-category="健康医学"><span>＋</span>健康医学</button>
+      <button class="nav-item category-nav" data-category="地球环境"><span>◉</span>地球环境</button>
+      <button class="nav-item category-nav" data-category="历史文明"><span>◷</span>历史文明</button>
+      <button class="nav-item category-nav" data-category="社会经济"><span>▥</span>社会经济</button>
+      <button class="nav-item category-nav" data-category="文化艺术"><span>◆</span>文化艺术</button>
+      <button class="nav-item category-nav" data-category="生活常识"><span>☀</span>生活常识</button>
+      <button class="nav-item category-nav" data-category="数字金融"><span>₮</span>数字金融</button>
+      <button class="nav-item category-nav" data-category="游戏百科"><span>◇</span>游戏百科</button></div></details>
+      <a class="nav-item" href="about-mycom.html"><span>＋</span>关于 mycom+</a>
+      <a class="nav-item" href="about-changer.html"><span>↔</span>关于 Changer+</a>
+      <a class="nav-item" href="profile.html"><span>♡</span>个人中心</a>
+    </nav>
+    <div class="sidebar-tip" id="dailyTip"><button class="sidebar-tip-close" id="dailyTipClose" type="button" aria-label="关闭每日一学" title="关闭">×</button><span>💡</span><strong>每日一学</strong><p>保持好奇，每天了解一个新概念。</p></div>
+  </aside>
+  <div class="page">
+    <header class="topbar">
+      <button class="icon-button menu-button" id="menuButton" aria-label="打开菜单">☰</button>
+      <div class="top-search"><span>⌕</span><input id="searchInput" type="search" placeholder="搜索知识、概念或关键词…"><kbd>Ctrl K</kbd></div>
+      <div class="user-actions" id="userActions"></div><button class="icon-button" id="themeButton" aria-label="切换深色模式">☾</button>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-content"><span class="eyebrow"><i></i> SMART WIKI 知识库</span><h1>从一个问题开始，<br><em>找到清晰的答案。</em></h1><p>精选、整理并持续更新的知识条目，让复杂信息更容易理解。</p>
+          <div class="hero-search"><span class="search-glyph">⌕</span><input id="heroSearchInput" type="search" placeholder="搜索文章、主题或关键词…"><button id="searchButton" type="button">搜索 <b>→</b></button></div>
+          <div class="hero-suggestions"><span>试试搜索</span><button type="button" data-query="USDT">USDT</button><button type="button" data-query="人工智能">人工智能</button><button type="button" data-query="无畏契约">无畏契约</button></div>
+        </div>
+        <div class="hero-art" aria-hidden="true"><div class="knowledge-panel"><div class="panel-head"><span>本周精选</span><b>持续更新</b></div><div class="panel-feature"><i>₮</i><div><small>金融科普</small><strong>读懂 USDT 与稳定币</strong><p>发行机制、网络选择与风险边界</p></div></div><div class="panel-row"><span><i>AI</i>人工智能</span><b>8 分钟阅读</b></div><div class="panel-row"><span><i>V</i>无畏契约</span><b>新手指南</b></div></div></div>
+      </section>
+      <section class="stats" aria-label="知识库统计"><div><strong id="homeArticleCount">0</strong><span>知识条目</span></div><div><strong id="homeCategoryCount">0</strong><span>知识分类</span></div><div><strong>今天</strong><span>最近更新</span></div></section>
+      <a class="partner-feature" href="about-mycom.html"><div><span class="section-kicker">FEATURED PARTNER</span><h2>认识 mycom+</h2><p>帮助创业者在亚洲建立清晰、合规且可持续的业务结构，从公司设立到长期运营获得一站式支持。</p><span class="feature-link">查看专栏介绍 →</span></div><div class="partner-symbol"><img src="assets/mycom-logo.svg" alt="mycom+ 官方 Logo"></div></a>
+      <a class="partner-feature changer-feature" href="about-changer.html"><div><span class="section-kicker">STABLECOIN WALLET</span><h2>认识 Changer+</h2><p>面向 USDT 与 USDC 的多链自托管钱包，连接稳定币管理、全球转账、Web3 使用体验与 AI 安全提示。</p><span class="feature-link">查看 Changer+ 专栏 →</span></div><div class="partner-symbol changer-symbol"><img src="assets/changer-icon.svg" alt="Changer+ 官方 Icon"></div></a>
+      <section class="home-arcade"><div class="home-arcade-copy"><span class="section-kicker">SMART ARCADE</span><h2>学习之间，来一局。</h2><p>三个无需安装、手机电脑都能玩的网页小游戏。游客也能凭设备 Cookie 参与全站排行榜。</p><a href="arcade.html">进入游戏中心 <b>→</b></a></div><div class="home-game-icons" aria-hidden="true"><span>✦</span><span>♟</span><span>≈</span></div></section>
+      <section class="content-section home-featured-knowledge">
+        <div class="section-heading"><div><span class="section-kicker">EDITOR'S PICKS</span><h2>精选知识</h2></div><a class="primary-link" href="knowledge.html">进入全部知识 →</a><span class="result-count" id="resultCount"></span></div>
+        <div id="articleList" class="article-grid"></div>
+        <div id="emptyState" class="empty-state" hidden><span>⌕</span><h3>没有找到相关资料</h3><p id="emptyMessage">试试更短的关键词，或者选择其他分类。</p><div id="externalSearchActions" class="external-search-actions" hidden><a id="googleSearchLink" class="google-search-button" target="_blank" rel="noopener noreferrer">前往 Google 专项搜索 ↗</a><small>这个搜索词已记录并报告给管理员，帮助 Smart Wiki 补充内容。</small></div></div>
+      </section>
+    </main>
+    <footer>让知识更清晰，让探索更简单 · Smart Wiki · Version 1.0.2</footer>
+  </div>
+</div>
+<div class="overlay" id="overlay"></div><script src="extra-articles.js"></script><script src="wiki-data.js?v=1.0.1-2"></script><script src="app.js?v=1.0.2-2"></script>
+</body></html>
